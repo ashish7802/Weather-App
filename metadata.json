@@ -1,0 +1,7 @@
+{
+  "name": "Weather Forecast",
+  "description": "Fetch real-time weather conditions, forecasts, and atmospheric data based on your location or any searched city.",
+  "requestFramePermissions": ["geolocation"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+
