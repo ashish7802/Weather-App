@@ -57,6 +57,7 @@ export interface WeatherData {
   hourly: HourlyForecastItem[];
   daily: DailyForecastItem[];
   lastUpdated: string;
+  provider?: string;
 }
 
 export interface SearchResultItem {

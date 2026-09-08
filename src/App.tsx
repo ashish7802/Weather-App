@@ -203,6 +203,7 @@ export default function App() {
         onToggleUnit={handleToggleUnit}
         windUnit={windUnit}
         onToggleWindUnit={handleToggleWindUnit}
+        currentProvider={weatherData?.provider}
       />
 
       {/* Main Content Area */}
@@ -318,18 +319,13 @@ export default function App() {
         <div className="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-3">
           <p className="flex items-center gap-1.5">
             <span>Powered by</span>
-            <a
-              href="https://open-meteo.com/"
-              target="_blank"
-              rel="noreferrer"
-              className="text-sky-400 hover:text-sky-300 font-medium underline underline-offset-2 transition"
-            >
-              Open-Meteo API
-            </a>
+            <span className="text-sky-400 font-medium">
+              {weatherData?.provider || 'Weather Meteorological API'}
+            </span>
             <span>• High-resolution atmospheric forecast</span>
           </p>
           <p className="text-slate-400">
-            Global weather data with temperature, wind, humidity, and UV tracking
+            Real-time weather conditions, forecasts, and atmospheric tracking
           </p>
         </div>
       </footer>
